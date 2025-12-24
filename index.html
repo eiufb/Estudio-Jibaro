@@ -84,6 +84,16 @@
             border-radius: 1.5rem;
             overflow: hidden;
         }
+
+        .social-icon {
+            transition: all 0.3s ease;
+            opacity: 0.6;
+        }
+        .social-icon:hover {
+            opacity: 1;
+            transform: translateY(-3px);
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
@@ -105,11 +115,17 @@
                 <img src="https://i.imgur.com/ErPECzV.png" alt="Logo" class="h-8 w-8 object-contain">
                 <div class="text-lg font-black font-syne tracking-tighter uppercase italic">Estudio Jibaro</div>
             </div>
-            <nav class="hidden md:flex gap-8 text-[10px] font-bold tracking-[0.2em] uppercase">
+            <nav class="hidden md:flex items-center gap-8 text-[10px] font-bold tracking-[0.2em] uppercase">
                 <a href="#inicio" class="hover:text-purple-400 transition">Inicio</a>
                 <a href="#estudio" class="hover:text-purple-400 transition">Estudio</a>
                 <a href="#reservar" class="hover:text-purple-400 transition">Turnos</a>
                 <a href="#ubicacion" class="hover:text-purple-400 transition">Ubicación</a>
+                <a href="https://www.instagram.com/jibaro.estudio/" target="_blank" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.999 0h.001zm1.978 1.71c.812.032 1.251.168 1.543.28.384.148.658.324.946.612.288.288.464.563.611.947.113.293.249.732.281 1.543.033.81.041 1.056.041 3.078 0 2.022-.008 2.269-.041 3.08-.032.811-.168 1.25-.28 1.543a2.634 2.634 0 0 1-.611.947 2.634 2.634 0 0 1-.947.611c-.293.112-.732.248-1.543.28-1.056.042-1.304.042-3.32.042-2.015 0-2.264 0-3.32-.042-.812-.032-1.251-.168-1.543-.28a2.634 2.634 0 0 1-.947-.611 2.634 2.634 0 0 1-.611-.947c-.112-.293-.248-.732-.28-1.543-.042-1.056-.042-1.304-.042-3.32 0-2.015 0-2.264.042-3.32.032-.812.168-1.251.28-1.543.148-.384.324-.658.612-.946.288-.288.563-.464.947-.611.293-.112.732-.248 1.543-.28 1.056-.042 1.304-.042 3.32-.042 2.015 0 2.264 0 3.32.042z"/>
+                        <path d="M8 3.99a4.01 4.01 0 1 0 0 8.02 4.01 4.01 0 0 0 0-8.02zm0 6.682a2.672 2.672 0 1 1 0-5.344 2.672 2.672 0 0 1 0 5.344zM12.44 3.56a1.001 1.001 0 1 1-2.001 0 1.001 1.001 0 0 1 2.001 0z"/>
+                    </svg>
+                </a>
             </nav>
             <a href="#reservar" class="btn-primary text-white px-5 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase">RESERVAR</a>
         </div>
@@ -157,11 +173,13 @@
                              class="w-full h-full object-cover object-top">
                     </div>
                 </div>
+                
                 <h3 class="text-3xl md:text-5xl font-black italic font-syne uppercase mb-6">Salvador Sorcinelli</h3>
                 <p class="text-gray-400 text-lg md:text-xl leading-relaxed italic max-w-2xl">
                     "Mi misión es ayudarte a encontrar tu mejor versión a través del estilo y la atención personalizada."
                 </p>
-                <a href="#reservar" class="mt-10 btn-primary text-white px-10 py-4 rounded-full font-bold tracking-widest text-xs uppercase">AGENDAR CON SALVI</a>
+                
+                <a href="#reservar" class="mt-10 btn-primary text-white px-10 py-4 rounded-full font-bold tracking-widest text-xs uppercase">AGENDAR CON SALVADOR</a>
             </div>
         </div>
     </section>
@@ -188,7 +206,7 @@
                 <a href="https://maps.google.com/?q=Av.+Cárcano+457,+Villa+Carlos+Paz" target="_blank" class="mt-8 inline-block btn-primary text-white px-8 py-3 rounded-full text-[10px] font-bold tracking-widest">VER EN MAPS</a>
             </div>
             <div class="md:w-1/2 w-full aspect-video rounded-[2rem] md:rounded-[3rem] overflow-hidden reveal shadow-2xl border border-white/10">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.021575451!2d-64.4984!3d-31.4246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d6641b3e8a3b5%3A0x8f7f8f8f8f8f8f8f!2sAv.+C%C3%A1rcano+457!5e0!3m2!1ses!2sar!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.021591143!2d-64.4925!3d-31.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI1JzEyLjAiUyA2NMKwMjknMzMuMCJX!5e0!3m2!1ses-419!2sar!4v1625000000000!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -199,10 +217,20 @@
                 <img src="https://i.imgur.com/ErPECzV.png" class="h-6 opacity-40">
                 <span class="font-syne font-black opacity-40 uppercase tracking-tighter text-sm">Estudio Jibaro</span>
             </div>
-            <p class="text-[9px] md:text-[10px] text-gray-600 tracking-[0.2em] uppercase italic">© 2025 Estudio Jibaro • Salvi Sorcinelli</p>
+            
+            <div class="flex flex-col items-center gap-4">
+                <a href="https://www.instagram.com/jibaro.estudio/" target="_blank" class="flex items-center gap-2 social-icon group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.999 0h.001zm1.978 1.71c.812.032 1.251.168 1.543.28.384.148.658.324.946.612.288.288.464.563.611.947.113.293.249.732.281 1.543.033.81.041 1.056.041 3.078 0 2.022-.008 2.269-.041 3.08-.032.811-.168 1.25-.28 1.543a2.634 2.634 0 0 1-.611.947 2.634 2.634 0 0 1-.947.611c-.293.112-.732.248-1.543.28-1.056.042-1.304.042-3.32.042-2.015 0-2.264 0-3.32-.042-.812-.032-1.251-.168-1.543-.28a2.634 2.634 0 0 1-.947-.611 2.634 2.634 0 0 1-.611-.947c-.112-.293-.248-.732-.28-1.543-.042-1.056-.042-1.304-.042-3.32 0-2.015 0-2.264.042-3.32.032-.812.168-1.251.28-1.543.148-.384.324-.658.612-.946.288-.288.563-.464.947-.611.293-.112.732-.248 1.543-.28 1.056-.042 1.304-.042 3.32-.042 2.015 0 2.264 0 3.32.042z"/>
+                        <path d="M8 3.99a4.01 4.01 0 1 0 0 8.02 4.01 4.01 0 0 0 0-8.02zm0 6.682a2.672 2.672 0 1 1 0-5.344 2.672 2.672 0 0 1 0 5.344zM12.44 3.56a1.001 1.001 0 1 1-2.001 0 1.001 1.001 0 0 1 2.001 0z"/>
+                    </svg>
+                    <span class="text-[10px] tracking-[0.2em] uppercase font-bold group-hover:text-purple-400">@jibaro.estudio</span>
+                </a>
+                <p class="text-[9px] md:text-[10px] text-gray-600 tracking-[0.2em] uppercase italic">© 2025 Estudio Jibaro • Salvador Sorcinelli</p>
+            </div>
+
             <div class="flex items-center gap-4">
-                <span class="text-[10px] text-gray-500 uppercase tracking-widest">Suscripción</span>
-                <span class="text-xs font-bold font-syne text-purple-500">30 DÍAS</span>
+                
             </div>
         </div>
     </footer>
